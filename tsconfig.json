@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",                         // ← مهم
+    "moduleResolution": "Node",                 // ← خیلی مهم
+    "esModuleInterop": true,                    // ← برای import پیش‌فرض
+    "allowSyntheticDefaultImports": true,       // ← برای سازگاری بیشتر
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"]
+}
