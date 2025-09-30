@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>رزرو بلیط سینما</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>رزرو بلیط سینما</h1>
+
+    <div class="screen-container">
+      <div class="light-effect"></div>
+      <div class="screen">صفحه نمایش</div>
+    </div>
+
+    <div id="cinema"></div>
+
+    <div class="actions">
+      <button id="buyButton">خرید</button>
+    </div>
+    <div class="admin-actions">
+      <button id="clearStorageButton">پاک کردن اطلاعات</button>
+      <button id="showSalesButton">نمایش فروش</button>
+    </div>
+
+    <div id="invoice" class="invoice" style="display: none">
+      <h2>فاکتور خرید</h2>
+      <div id="invoice-details"></div>
+      <button id="print-btn" onclick="window.print()">چاپ فاکتور</button>
+      <p class="footer">سینما آزادی با بروزترین فیلم‌ها</p>
+    </div>
+    <script type="module" src="./dist/main.js"></script>
+    <!-- <script type="module" src="./dist/main.js"></script> -->
+  </body>
+</html>
